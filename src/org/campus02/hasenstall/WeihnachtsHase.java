@@ -17,6 +17,7 @@ public class WeihnachtsHase extends Hase {
 
     @Override // Annotation
     public void verteilen() {
-        System.out.println(name + " legt die Geschenke unter den Christbaum");
+        super.verteilen();
+        System.out.println(super.name + " legt die Geschenke unter den Christbaum");
     }
 }
