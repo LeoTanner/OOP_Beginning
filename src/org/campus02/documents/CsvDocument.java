@@ -8,6 +8,5 @@ public class CsvDocument extends Document {
 
     @Override
     public void printDocument() {
-
     }
 }

@@ -9,6 +9,7 @@ public class TextDocument extends Document {
         this.content = content;
     }
 
+
     public void printDocument() {
         System.out.println("Filename: " + filename);
         System.out.println("Content: " + content);

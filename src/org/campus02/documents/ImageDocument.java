@@ -7,6 +7,7 @@ public class ImageDocument extends Document{
     private int sizeY;
     private String colour;
 
+
     public ImageDocument(String filename, int sizeX, int sizeY, String colour) {
         super(filename);
         this.sizeX = sizeX;

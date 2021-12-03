@@ -10,6 +10,7 @@ public class PrintManager {
         documents.add(document);
     }
 
+
     public void printAll() {
         for (Document doc : documents) {
             doc.printDocument();

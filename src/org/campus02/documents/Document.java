@@ -7,5 +7,6 @@ public abstract class Document {
         this.filename = filename;
     }
 
+
     public abstract void printDocument() ;
 }
