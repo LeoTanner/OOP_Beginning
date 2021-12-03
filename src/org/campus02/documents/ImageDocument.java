@@ -14,7 +14,7 @@ public class ImageDocument extends Document{
         this.colour = colour;
     }
 
-    @Override
+
     public void printDocument() {
         System.out.println("Filename: " + filename);
         System.out.println("SizeX: " + sizeX);
