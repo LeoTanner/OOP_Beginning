@@ -16,5 +16,24 @@ public class HasenstallDemoApp {
         felix.verteilen();
         allgemeinerFeldhase.verteilen();
 
+        // Up-Casting
+        Hase wh = santa;
+        Hase wh2 = new WeihnachtsHase("Christkind", 999);
+
+        wh2.fressen();
+        wh2.verteilen();
+        wh2.verteilen();
+
+        Hase oh = new OsterHase("Osterhase");
+        oh.verteilen();
+
+        // Down-Casting
+        System.out.println("\ndowncasting");
+        OsterHase osterHase = (OsterHase) oh; // Ich übernehme die Verantwortung
+        osterHase.bemaleOstereier();
+
+        OsterHase wh2AlsOsterhase = (OsterHase) wh2;
+        wh2AlsOsterhase.bemaleOstereier();
+
     }
 }
