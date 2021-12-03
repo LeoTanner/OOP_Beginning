@@ -1,5 +1,7 @@
 package org.campus02.hasenstall;
 
+import java.util.ArrayList;
+
 public class HasenstallDemoApp {
 
     public static void main(String[] args) {
@@ -32,8 +34,22 @@ public class HasenstallDemoApp {
         OsterHase osterHase = (OsterHase) oh; // Ich übernehme die Verantwortung
         osterHase.bemaleOstereier();
 
-        OsterHase wh2AlsOsterhase = (OsterHase) wh2;
-        wh2AlsOsterhase.bemaleOstereier();
+        // Funktioniert nicht und liefert ClassCastException, da wh2 kein Osterhase!!
+        //OsterHase wh2AlsOsterhase = (OsterHase) wh2;
+        //wh2AlsOsterhase.bemaleOstereier();
+
+        ArrayList<Hase> stall = new ArrayList<>();
+        stall.add(felix);
+        stall.add(santa);
+        stall.add(allgemeinerFeldhase);
+
+        System.out.println("\nstall mit Hasen-Objekte");
+        for (Hase h : stall) {
+            h.fressen();
+        }
+        for (Hase h : stall) {
+            h.verteilen();
+        }
 
     }
 }
